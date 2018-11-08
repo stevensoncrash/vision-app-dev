@@ -72,6 +72,10 @@
                                     <action selector="flashBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o8c-fS-fBk"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LTA-oS-ECs">
+                                <rect key="frame" x="307.66666666666669" y="683" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -82,10 +86,12 @@
                             <constraint firstItem="WdK-lH-gms" firstAttribute="bottom" secondItem="FxQ-XL-1ds" secondAttribute="bottom" constant="22" id="BPI-1E-dQs"/>
                             <constraint firstItem="WdK-lH-gms" firstAttribute="trailing" secondItem="tim-oW-9eM" secondAttribute="trailing" constant="20" id="E1M-wG-gyc"/>
                             <constraint firstItem="dMB-yE-HhZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RJz-BN-kdA"/>
+                            <constraint firstItem="LTA-oS-ECs" firstAttribute="centerX" secondItem="tim-oW-9eM" secondAttribute="centerX" id="ZAV-kU-Fl5"/>
                             <constraint firstItem="dMB-yE-HhZ" firstAttribute="leading" secondItem="WdK-lH-gms" secondAttribute="leading" id="foF-sN-gDz"/>
                             <constraint firstItem="WdK-lH-gms" firstAttribute="trailing" secondItem="Shm-KC-5Gt" secondAttribute="trailing" constant="20" id="gms-zS-xV0"/>
                             <constraint firstItem="WdK-lH-gms" firstAttribute="bottom" secondItem="tim-oW-9eM" secondAttribute="bottom" constant="20" id="hWX-ig-2Ui"/>
                             <constraint firstItem="Shm-KC-5Gt" firstAttribute="leading" secondItem="WdK-lH-gms" secondAttribute="leading" constant="20" id="hct-jZ-KAA"/>
+                            <constraint firstItem="LTA-oS-ECs" firstAttribute="centerY" secondItem="tim-oW-9eM" secondAttribute="centerY" id="jVl-bl-FwV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WdK-lH-gms"/>
                     </view>
@@ -93,10 +99,11 @@
                     <connections>
                         <outlet property="cameraView" destination="dMB-yE-HhZ" id="7k1-X6-znG"/>
                         <outlet property="captureImageView" destination="tim-oW-9eM" id="guF-eG-ct5"/>
-                        <outlet property="confidenceLbl" destination="646-7g-wwd" id="dnm-Gg-Ff5"/>
+                        <outlet property="confidenceLbl" destination="646-7g-wwd" id="OGs-2x-gwk"/>
                         <outlet property="flashBtn" destination="FxQ-XL-1ds" id="R0b-eh-QAY"/>
-                        <outlet property="identificationLbl" destination="646-7g-wwd" id="aqM-rT-mGs"/>
+                        <outlet property="identificationLbl" destination="XPz-GN-X6e" id="Xad-A9-QxM"/>
                         <outlet property="roundedLblView" destination="Shm-KC-5Gt" id="gEk-1D-Gv8"/>
+                        <outlet property="spinner" destination="LTA-oS-ECs" id="mE6-ef-Lbl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
